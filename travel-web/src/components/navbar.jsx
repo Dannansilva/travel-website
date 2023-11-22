@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-scroll";
+import Button from "../layouts/button";
+import { AiOutLineMenu } from "react-icons/ai";
 
 const Navbar = () => {
+  const backgroundColor = "bg-white";
   return (
     <div>
       <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-darkBackground text-white">
@@ -13,16 +16,18 @@ const Navbar = () => {
             duration={500}
             className=" cursor-pointer"
           >
-            <h1>TripPixie</h1>
+            <h1 className=" font-semibold text-xl  cursor-pointer">
+              TripPixie
+            </h1>
           </Link>
         </div>
-        <nav className=" flex flex-row items-center gap-6">
+        <nav className=" hidden lg:flex flex-row items-center gap-6">
           <Link
             to="/"
             spy={true}
             smooth={true}
             duration={500}
-            className=" cursor-pointer"
+            className=" hover:text-brightColor transition-all cursor-pointer"
           >
             Home
           </Link>
@@ -31,7 +36,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" cursor-pointer"
+            className=" hover:text-brightColor transition-all cursor-pointer"
           >
             Features
           </Link>
@@ -40,7 +45,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" cursor-pointer"
+            className=" hover:text-brightColor transition-all cursor-pointer"
           >
             Destination
           </Link>
@@ -49,7 +54,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" cursor-pointer"
+            className=" hover:text-brightColor transition-all cursor-pointer"
           >
             about
           </Link>
@@ -58,13 +63,19 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" cursor-pointer"
+            className=" hover:text-brightColor transition-all cursor-pointer"
           >
             Contact
           </Link>
         </nav>
         <div className=" flex flex-row gap-8  items-center">
-          <h1>Register</h1>
+          <h1 className=" hover:text-brightColor transition-all cursor-pointer ">
+            Register
+          </h1>
+          <Button title="Login" backgroundColor={backgroundColor} />
+        </div>
+        <div className=" flex items-center p-2">
+          <AiOutLineMenu size={25} />
         </div>
       </div>
     </div>
