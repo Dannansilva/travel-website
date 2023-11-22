@@ -63,9 +63,8 @@ const Navbar = () => {
             Contact
           </Link>
         </nav>
-        <div>
+        <div className=" flex flex-row gap-8  items-center">
           <h1>Register</h1>
-          <button>Login</button>
         </div>
       </div>
     </div>
