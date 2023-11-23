@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Button from "../layouts/button";
-import { AiOutLineMenu } from "react-icons/ai";
+import { CiMenuBurger } from "react-icons/ci";
 
 const Navbar = () => {
   const backgroundColor = "bg-white";
@@ -75,7 +75,7 @@ const Navbar = () => {
           <Button title="Login" backgroundColor={backgroundColor} />
         </div>
         <div className=" flex items-center p-2">
-          <AiOutLineMenu size={25} />
+        <CiMenuBurger color="white" size={25}/>
         </div>
       </div>
     </div>
